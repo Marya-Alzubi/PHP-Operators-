@@ -1,4 +1,7 @@
 <?php
+//
+//
+//
 //Ex1 :
 function year($x){
         if($x % 4 == 0){
@@ -12,6 +15,9 @@ function year($x){
         }   
 }
 year(2000);
+//
+//
+//
 //Ex2 :
 function Temperature($T){
     if($T < 20){
@@ -21,6 +27,9 @@ function Temperature($T){
     }
 }
 Temperature(15);
+//
+//
+//
 //Ex 3:
 function Calculate($x , $y){
 $Sum = $x + $y;
@@ -32,6 +41,9 @@ $Sum_mul = ($x + $y) * 3;
     }
 }
 echo Calculate(2,2) . "<hr>";
+//
+//
+//
 //Ex 4:
 function difference($x){
     $dif = abs($x - 100);
@@ -42,6 +54,9 @@ function difference($x){
     }
 }
 echo difference(120) . "<hr>";
+//
+//
+//
 //Ex 5:
 function intCheck($x,$y){
     $q = is_int($x);
@@ -58,6 +73,9 @@ function intCheck($x,$y){
     }   
 }
 echo intCheck(20,10) . "<hr>";
+//
+//
+//
 //Ex 6:
 function intCheck1($x){
     $q = is_int($x);
@@ -70,6 +88,9 @@ function intCheck1($x){
     }
 }
 echo intCheck1(200) . "<hr>";
+//
+//
+//
 // Ex 7:
 function Multi($x){
     if($x >= 0){
@@ -90,6 +111,9 @@ function Multi($x){
     }
 }
 echo Multi(21) . "<hr>";
+//
+//
+//
 //Ex 8:
     $str = "Maria Is Beautiful";
     $arr = explode(" ",$str);
@@ -113,6 +137,22 @@ echo Multi(21) . "<hr>";
     //
     //
     //
+    //Ex 9:
+    ///////////////////////////////////
+echo "QUSTION9"."<br>";
+function test6($s, $n) 
+{
+   return substr($s,0,$n).substr($s,$n+1,strlen($s)-$n);
+}
+
+echo test6("Hello", 1)."<br>";
+echo test6("Hello", 0)."<br>";
+echo test6("Hello", 4)."<br>";
+echo "<hr>";
+//
+//
+//
+ //Ex 10:
     ///////////////////////////////////
     
     echo "QUSTION10"."<br>";
@@ -125,6 +165,10 @@ echo Multi(21) . "<hr>";
     var_dump(test9(250, 300));
     var_dump(test9(105, 190));
     echo "<hr>";
+    //
+    //
+    //
+    //Ex 11:
     ///////////////////////////////////
     echo "QUSTION11"."<br>";
     
@@ -138,6 +182,10 @@ echo Multi(21) . "<hr>";
     var_dump(test33(11, 45));
     var_dump(test33(25, 40));
     echo "<hr>";
+    //
+    //
+    //
+    //Ex 12:
     ///////////////////////////////////
     echo "QUSTION12"."<br>";
     
@@ -152,6 +200,10 @@ echo Multi(21) . "<hr>";
     echo ttest(1, 1, 1)."\n";
     echo ttest(1, 2, 2)."\n";
     echo "<hr>";
+    //
+    //
+    //
+    //Ex 13:
     ///////////////////////////////////
     echo "QUSTION13"."<br>";
     
@@ -167,6 +219,10 @@ echo Multi(21) . "<hr>";
     echo testl(95, 95)."\n";
     echo testl(99, 70)."\n";
     echo "<hr>";
+    //
+    //
+    //
+    //Ex 14:
     ///////////////////////////////////
     echo "QUSTION14"."<br>";
     
@@ -178,6 +234,51 @@ echo Multi(21) . "<hr>";
     var_dump(testq(5, 4));
     var_dump(testq(4, 3));
     var_dump(testq(1, 4));
+    //
+    //
+    //
+    
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// My Solution 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// //EX1
+// $year = 2000 ;
+// if ($year % 400 == 0){
+//     echo "$year it is a leap year" . "<hr>";
+// }
+// elseif ($year % 4 == 0) {
+//     echo "it is a leap year";
+// }else {
+//     echo "it is NOT a leap year";
+// }
+// //
+// //
+// //
+// //EX2
+// function check_temp($temp) {
+//     if ($temp <=20){
+//     return "Winter / True";
+// }
+// else {
+//     return "I hate summer!";
+// }
+// }
+
+// echo check_temp(-5) . "<hr>";
+// //
+// //
+// //
+// //ex5
+// function checkInt ($x , $y){
+//     if ( is_int($x) && is_int($y)){
+//         if ( $x == 30 || $y == 30 || ($x + $y) == 30 ){
+//             return true ;
+//         }
+//     }
+// }
+// echo checkInt(15,15) . "<hr>";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
     
 
 ?>
